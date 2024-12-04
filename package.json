@@ -1,0 +1,20 @@
+{
+  "name": "expense-tracker-cli",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.10.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "console-table-printer": "^2.12.1",
+    "json-2-csv": "^5.5.7"
+  },
+  "scripts": {
+    "compile": "bun build ./src/index.ts --compile --outfile expense-tracker --target bun"
+  }
+}
